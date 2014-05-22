@@ -1,0 +1,9 @@
+flask-multilingue-demo
+======================
+
+Example Flask Multilingue Demo.
+
+Demo
+----
+
+python app.py

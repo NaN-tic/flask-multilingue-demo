@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title %}{{ _("Contact Index") }}{% endblock %}
+{% block body %}
+<h1>{{ _("Contact Index") }}</h1>
+<ul>
+    <li><a href="{{ url_for('contact.contact_'+g.language, lang=g.language) }}">{{ _("Contact Detail") }}</a></li>
+    <li><a href="{{ url_for(g.language) }}">{{ _("Home") }}</a></li>
+</ul>
+
+<p><a href="{{ url_for('en') }}">{{ _("English") }}</a> | 
+<a href="{{ url_for('ca') }}">{{ _("Catalan") }}</a> |
+<a href="{{ url_for('es') }}">{{ _("Spanish") }}</a></p>
+{% endblock %}
